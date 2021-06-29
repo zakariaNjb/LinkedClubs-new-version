@@ -1,0 +1,107 @@
+div.mainComment {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-right: 33px;
+}
+
+div.mainComment img {
+    width: 2em;
+    height: 2em;
+    border-radius: 100px;
+}
+
+div.mainComment p {
+    padding: 0px 10px;
+    padding-right: 20px;
+    margin: 0px;
+    text-align: justify;
+    border-radius: 5px;
+}
+
+div.mainComment button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+div.mainComment div.content {
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+
+div.mainComment div.content div.parentComment {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.171);
+}
+
+div.mainComment div.content button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+div.mainComment div.content button.writeReply {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px;
+    background-color: rgba(128, 128, 128, 0.171);
+}
+
+div.mainComment div.content button svg {
+    transition-delay: 50ms;
+    transition-duration: 200ms;
+}
+
+div.mainComment div.content button svg:hover {
+    color: rgb(0, 174, 255);
+}
+
+div.mainComment div.content button input {
+    width: 100%;
+    margin-right: 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1.1em;
+    padding-left: 15px;
+}
+
+button.deleteBtn {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+    padding: 6px;
+}
+
+
+/***********reply********************/
+
+div.reply {
+    display: flex;
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.171);
+}
+
+div.reply p {
+    background-color: transparent;
+    width: 100%;
+    margin: 0px;
+}
+
+div.reply button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}

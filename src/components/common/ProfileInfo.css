@@ -1,0 +1,173 @@
+#info {
+    background: linear-gradient(white 30%, rgb(0, 225, 255));
+    margin-bottom: 20px;
+}
+
+
+/****Background images section**/
+
+.background {
+    box-shadow: 5px 5px 20px black;
+    width: 100%;
+    margin: 0 auto;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+}
+
+img.backgroundImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.background div {
+    width: 8em;
+    height: 8em;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-style: groove;
+    border-width: 2px;
+    padding: 3px;
+    border-color: rgb(0, 225, 255);
+    box-shadow: 5px 5px 20px black;
+}
+
+.background div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.background div label {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: rgb(0, 225, 255);
+    border-radius: 100%;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background span {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 250, 250, 0.548);
+    box-shadow: 5px 5px 20px black;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.background span label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+
+/******Bio section*******/
+
+section.Bio {
+    background-color: snow;
+    width: 95%;
+    margin: 0px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 3px 3px 10px black;
+}
+
+section.Bio p,
+section.Bio h1,
+section.Bio div span h2,
+section.Bio div span h3 {
+    margin: 0px;
+    text-align: left;
+}
+
+section.Bio h1 {
+    display: flex;
+    align-items: center;
+}
+
+section.Bio div span h3 {
+    margin: 5px 0px;
+    color: gray;
+    font-weight: 500;
+}
+
+section.Bio div button {
+    padding: 0px;
+    width: 100px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+section.Bio div span button {
+    background-color: transparent;
+}
+
+button.follow {
+    background-color: rgb(0, 225, 255);
+    color: snow;
+    height: 30px;
+    padding: 10px 15px;
+    font-weight: bold;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 3px;
+}
+
+section.Bio p {
+    margin: 5px 0px;
+    width: 100%;
+    text-align: justify;
+}
+
+section.Bio div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/**********Media queries**********/
+
+@media screen and (min-width:700px) {
+    .background {
+        width: 90%;
+    }
+    section.Bio {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .background {
+        width: 80%;
+    }
+    section.Bio {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .background {
+        width: 70%;
+    }
+    section.Bio {
+        width: 50%;
+    }
+}

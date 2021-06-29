@@ -1,0 +1,58 @@
+/*******This file is also applicable on MenuClubMobile***********/
+
+menu.menuMobile {
+    display: flex;
+    flex-direction: column;
+}
+
+menu.menuMobile,
+.menuBtn {
+    position: fixed;
+    bottom: 48.8px;
+    right: 20px;
+    margin: 5px 0px;
+    padding: 0px;
+    opacity: 0;
+    transition-duration: 200ms;
+}
+
+menu.menuMobile {
+    transform: translateY(335px);
+    transition-duration: 200ms;
+    transition-delay: 150ms;
+    transition-timing-function: ease-out;
+}
+
+
+/*****This class display will be used in the jsx file******/
+
+.display {
+    transform: translateY(0px) !important;
+}
+
+.menuBtn {
+    bottom: 0px;
+    font-size: 1.4em;
+    color: snow;
+    opacity: 1;
+}
+
+menu.menuMobile button,
+.menuBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px;
+    margin: 5px;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    background-color: rgb(0, 225, 255);
+    box-shadow: 5px 5px 10px black;
+    cursor: pointer;
+}
+
+menu.menuMobile button svg {
+    color: snow;
+    font-size: 1.8em;
+}

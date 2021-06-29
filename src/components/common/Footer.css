@@ -1,0 +1,38 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer ul li {
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+
+/**********Media queries***********/
+
+@media screen and (min-width:700px) {
+    footer {
+        position: absolute;
+        bottom: 0px;
+    }
+}

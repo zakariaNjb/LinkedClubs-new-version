@@ -1,0 +1,111 @@
+#requests {
+    margin: 0px auto;
+    width: 95%;
+}
+
+#requests section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: 10px 0px 30px 0px;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 5px;
+    background-color: snow;
+}
+
+#requests section h1,
+#requests section h4 {
+    margin: 0px;
+    text-align: left;
+    font-weight: 500;
+}
+
+#requests section h4 {
+    color: rgba(0, 0, 0, 0.808);
+    padding: 5px 0px;
+}
+
+
+/******student card******/
+
+.studentCard {
+    background-color: snow;
+    padding: 20px;
+    margin: 0px 0px 25px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 5px;
+}
+
+.studentCard img {
+    width: 100%;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.studentCard .information {
+    width: 100%;
+}
+
+.studentCard .information div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.studentCard .information div button {
+    font-size: 1.2em;
+    padding-left: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.studentCard .information div button:nth-of-type(1):hover {
+    color: rgb(0, 162, 255);
+}
+
+.studentCard .information p {
+    text-align: justify;
+    margin: 0px;
+}
+
+
+/****Media queries******/
+
+@media screen and (min-width:700px) {
+    .studentCard {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .studentCard .information {
+        padding-left: 20px;
+    }
+    .studentCard img {
+        width: 9em;
+        height: 9em;
+        padding: 3px;
+        border-radius: 100px;
+        border-style: groove;
+        border-color: rgb(0, 162, 255);
+    }
+    #requests {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    #requests {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    #requests {
+        width: 50%;
+    }
+}

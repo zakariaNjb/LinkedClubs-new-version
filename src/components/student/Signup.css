@@ -1,0 +1,85 @@
+.signup {
+    width: 100%;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0px auto;
+    text-align: left;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup fieldset {
+    border-color: rgb(0, 119, 255);
+}
+
+.signup label {
+    color: rgb(0, 119, 255);
+}
+
+.err {
+    padding-left: 15px;
+    color: red;
+}
+
+.signup input[type="date"] {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-color: rgb(0, 119, 255);
+    border-width: 0.5px;
+    outline: none;
+    font-size: 1.3em;
+}
+
+.signupBtn {
+    margin: 20px 0px 20px 0px;
+    width: 100%;
+    font-size: 1.5em;
+    padding: 10px 0px;
+    color: snow;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgb(0, 119, 255);
+}
+
+.signupBtn:hover {
+    background-color: rgb(0, 89, 255);
+}
+
+.signup a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+
+/**********Media queries***********/
+
+@media screen and (min-width:700px) {
+    .signup {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .signup {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .signup {
+        width: 40%;
+    }
+}

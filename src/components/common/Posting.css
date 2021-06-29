@@ -1,0 +1,66 @@
+form.posting {
+    background-color: snow;
+    width: 90%;
+    padding: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    box-shadow: 3px 3px 10px black;
+}
+
+form.posting div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-style: groove;
+    border-width: 0px 0px 0.5px 0px;
+}
+
+form.posting h2 {
+    margin: 0px;
+}
+
+form.posting img {
+    width: 100%;
+    max-height: 250px;
+}
+
+form.posting video {
+    width: 100%;
+}
+
+form.posting textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    outline: none;
+    margin: 10px 0px;
+    border: none;
+}
+
+form.posting textarea::placeholder {
+    font-size: 1.2em;
+}
+
+
+/*********Media queries***********/
+
+@media screen and (min-width:700px) {
+    form.posting {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    form.posting {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    form.posting {
+        width: 45%;
+    }
+}

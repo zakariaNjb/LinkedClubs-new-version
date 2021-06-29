@@ -1,0 +1,83 @@
+#clubsLogos {
+    background-color: snow;
+    margin: 20px auto;
+    margin-top: 0px;
+    width: 95%;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#clubsLogos section {
+    position: relative;
+}
+
+.avatarContainer {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.avatarContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.left_right {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    transition-duration: 200ms;
+    transition-delay: 200ms;
+    display: none;
+}
+
+#clubsLogos section:hover .left_right {
+    visibility: visible;
+}
+
+.left_right button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.left_right svg {
+    color: rgba(0, 0, 0, 0.575);
+    font-size: 2em;
+    border-radius: 100px;
+    box-shadow: 5px 5px 10px black;
+}
+
+
+/**********Media queries**********/
+
+@media screen and (min-width:415px) {
+    .left_right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:700px) {
+    #clubsLogos {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    #clubsLogos {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    #clubsLogos {
+        width: 50%;
+    }
+}

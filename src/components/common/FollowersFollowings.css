@@ -1,0 +1,116 @@
+.followersFollowings {
+    background-color: snow;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px black;
+    overflow-y: scroll;
+}
+
+.followersFollowings section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.followersFollowings section button,
+button.search,
+.follower button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.followersFollowings section div h1,
+h4 {
+    margin: 0px;
+    font-weight: 500;
+}
+
+.followersFollowings section div h4 {
+    color: rgba(0, 0, 0, 0.808);
+}
+
+button.search {
+    width: 100%;
+    padding: 8px 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: rgba(128, 128, 128, 0.171);
+}
+
+button.search input {
+    width: 100%;
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.follower {
+    padding: 10px 0px;
+    border-style: groove;
+    border-width: 0.5px 0px 0px 0px;
+}
+
+.follower,
+.follower div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.follower img {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 100px;
+    border-style: groove;
+    border-width: 2px;
+    padding: 2px;
+    border-color: rgb(0, 225, 255);
+}
+
+
+/****Media queries******/
+
+@media screen and (min-width:700px) {
+    .followersFollowings {
+        width: 75%;
+        height: 95%;
+    }
+    /* width */
+    .followersFollowings::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+    .followersFollowings::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    /* Handle */
+    .followersFollowings::-webkit-scrollbar-thumb {
+        background: rgba(128, 128, 128, 0.301);
+    }
+    /* Handle on hover */
+    .followersFollowings::-webkit-scrollbar-thumb:hover {
+        background: rgba(128, 128, 128, 0.671);
+    }
+}
+
+@media screen and (min-width:800px) {
+    .followersFollowings {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .followersFollowings {
+        width: 45%;
+    }
+}

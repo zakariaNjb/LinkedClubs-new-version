@@ -1,0 +1,17 @@
+div.avatar {
+    padding: 10px;
+}
+
+div.avatar img {
+    width: 5em;
+    height: 5em;
+    border-radius: 100px;
+    padding: 3px;
+    border-style: groove;
+    border-width: 3px;
+    border-color: rgb(0, 225, 255);
+}
+
+div.avatar h4 {
+    margin: 0px;
+}

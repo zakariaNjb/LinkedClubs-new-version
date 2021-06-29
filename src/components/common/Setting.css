@@ -1,0 +1,104 @@
+main.setting {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.setting form {
+    background-color: snow;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 5px;
+    width: 95%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+
+main.setting form section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+main.setting form section img {
+    width: 10em;
+    height: 10em;
+    border-radius: 100px;
+    padding: 3px;
+    border-style: groove;
+    border-color: rgb(0, 174, 255);
+}
+
+.inputContainer {
+    margin-top: 10px;
+}
+
+.inputContainer input {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    padding: 10px;
+    outline: none;
+    text-align: center;
+    font-weight: 500;
+}
+
+.inputContainer span {
+    display: block;
+    color: red;
+    padding: 10px 0px;
+}
+
+.inputContainer textarea {
+    width: 100%;
+    outline: none;
+    font-size: 1.4em;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+main.setting button[type="submit"] {
+    width: 100%;
+    font-size: 1.3em;
+    padding: 10px 0px;
+    background-color: rgb(0, 174, 255);
+    color: snow;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 8px black;
+    border-radius: 5px;
+}
+
+main.setting button[type="submit"]:hover {
+    background-color: rgb(0, 174, 255);
+}
+
+
+/******display the menu *****/
+
+menu.menuMobile {
+    opacity: 1;
+}
+
+
+/****Media queries******/
+
+@media screen and (min-width:700px) {
+    main.setting form {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    main.setting form {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    main.setting form {
+        width: 40%;
+    }
+}

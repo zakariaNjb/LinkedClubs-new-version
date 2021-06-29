@@ -1,0 +1,25 @@
+#postsField {
+    margin: 0 auto;
+    width: 95%;
+}
+
+
+/****Media queries******/
+
+@media screen and (min-width:700px) {
+    #postsField {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    #postsField {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    #postsField {
+        width: 50%;
+    }
+}

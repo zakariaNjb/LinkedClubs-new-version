@@ -1,0 +1,137 @@
+.searchBar {
+    background-color: snow;
+    border-radius: 5px;
+    margin: 10px auto;
+    margin-bottom: 30px;
+    width: 95%;
+    box-shadow: 3px 3px 10px black;
+    box-sizing: border-box;
+    transition-duration: 200ms;
+}
+
+
+/*****used for js code***/
+
+section.changeStyle {
+    margin-top: 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.searchBar div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.searchBar div img,
+.searchBar ul li img {
+    width: 2.8em;
+    height: 2.8em;
+    padding: 3px;
+    border-style: groove;
+    border-width: 2px;
+    border-color: rgb(0, 225, 255);
+    border-radius: 100px;
+}
+
+.searchBar div input {
+    width: 100%;
+    font-size: 1.1em;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+
+.searchBar div button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: flex;
+    cursor: pointer;
+}
+
+.searchBar div button:nth-of-type(1) {
+    background-color: rgba(128, 128, 128, 0.171);
+    border-radius: 5px;
+    width: 100%;
+    margin: 0px 10px;
+}
+
+.searchBar div button svg {
+    font-size: 2em;
+}
+
+.searchBar main {
+    position: relative;
+}
+
+.searchBar ul {
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+    max-height: 378px;
+    overflow-y: scroll;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: snow;
+    box-sizing: border-box;
+    box-shadow: 0 6px 10px -2px black;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.searchBar ul li {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-style: groove;
+    border-width: 0px;
+    border-top-width: 0.5px;
+}
+
+.searchBar ul li h4 {
+    margin: 0px 10px;
+}
+
+
+/************Media queries**********/
+
+@media screen and (min-width:700px) {
+    .searchBar {
+        width: 80%;
+    }
+    /* width */
+    .searchBar ul::-webkit-scrollbar {
+        width: 8px;
+    }
+    /* Track */
+    .searchBar ul::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    /* Handle */
+    .searchBar ul::-webkit-scrollbar-thumb {
+        background: rgba(128, 128, 128, 0.301);
+    }
+    /* Handle on hover */
+    .searchBar ul::-webkit-scrollbar-thumb:hover {
+        background: rgba(128, 128, 128, 0.671);
+    }
+}
+
+@media screen and (min-width:800px) {
+    .searchBar {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .searchBar {
+        width: 50%;
+    }
+}
